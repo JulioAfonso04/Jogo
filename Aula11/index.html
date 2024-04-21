@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="app">
+    <div class="personagem">
+        <div class="barra-vida">{{ heroi.vida }}%</div>
+        <div class="sprite"><img class="sprite" src="heroi.webp"></div>
+        <h1>Herói</h1>
+        <div class="acoes">
+            <button class="interacao" @click="atacar(true)">Atacar</button>
+            <button class="interacao" @click="defender(true)">Defender</button>
+            <button class="interacao" @click="pocao(true)">Usar Poção</button>
+            <button class="interacao" @click="correr(true)">Correr</button>
+        </div>
+    </div>
+    <div class="personagem">
+        <div class="barra-vida">{{ vilao.vida }}%</div>
+        <div class="sprite"><img class="sprite" src="vilao.webp"></div>
+        <h1>Vilão</h1>
+    </div>
+    <button class="resetarJogo" @click="resetarJogo(true)">Reiniciar Jogo</button>
+</body>
+</html>
+<script src="index.js"></script>

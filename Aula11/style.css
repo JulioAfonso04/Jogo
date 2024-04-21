@@ -1,0 +1,101 @@
+body, html {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('fundo.png');
+    background-size: cover;
+    background-position: center;
+}
+
+#app {
+    width: 100%;
+    max-width: 900px;
+    text-align: center;
+}
+
+.personagem {
+    background-color: rgb(255, 255, 255);
+    border: 2px solid #0033ff;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    width: 200px;
+}
+
+.acoes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+}
+
+.interacao {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(63, 232, 51);
+    color: rgb(0, 0, 0);
+    font-family: 'Gill Sans MT';
+    font-size: 16px;
+    box-shadow: rgb(56, 56, 56) 3px 3px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0,2s;
+}
+
+.interacao:hover {
+    background-color: rgb(46, 170, 37);
+}
+
+.interacao:active {
+    transform: translateY(2px)
+}
+
+.barra-vida {
+    height: 30px;
+    background-color: rgb(255, 0, 38);
+    color: rgb(0, 0, 0);
+    font-family: 'Gill Sans MT';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    box-shadow: rgb(56, 56, 56) 3px 3px;
+}
+
+.sprite {
+    height: 100px;
+    margin-bottom: 20px;
+    background-color: #0033ff;
+    border-radius: 5px;
+}
+
+h1 {
+    color: rgb(0, 0, 0);
+    font-family: 'Gill Sans MT';
+    font-size: 30px;
+    text-shadow: rgb(220, 220, 220) 3px 3px;
+}
+
+.resetarJogo {
+    padding: 10px;
+    border: 2px;
+    border-radius: 5px;
+    background-color: rgb(83, 0, 0);
+    color: rgb(255, 255, 255);
+    font-family: 'Gill Sans MT';
+    font-size: 16px;
+    box-shadow: rgb(56, 56, 56) 3px 3px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0,2s;
+
+}
+
+.resetarJogo:hover {
+    background-color: rgb(46, 1, 1);
+}
+
+.resetarJogo:active {
+    transform: translateY(2px)
+}
